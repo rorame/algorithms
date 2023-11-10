@@ -2,7 +2,7 @@ n, k = map(int, input().split())
 # n! / (k! * (n - k)!)
 
 def fac(x):
-    if (x == 1 or x == 0):
+    if x <= 1:
         return 1
     return x * fac(x-1)
 
